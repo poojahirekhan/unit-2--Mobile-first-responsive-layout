@@ -4,11 +4,19 @@
 * {
 	box-sizing: border-box;
 }
-body {
+
+
+body{
 	font-family: 'Varela Round', sans-serif;
 	line-height: 1.6;
-	color: #000;
+	
 	margin: 0;
+	background-color: white;
+}
+
+main{
+
+	color: grey;
 }
 ul {
   margin: 0;
@@ -19,17 +27,14 @@ p {
 	font-size: .95em;
 	margin-bottom: 1.8em;
 }
-h2,
-h3,
-a {
-	color: #000;
-}
+
 h2,
 h3 {
 	margin-top: 0;
 }
 a {
 	text-decoration: none;
+	
 }
 img {
 	max-width: 100%;
@@ -46,17 +51,20 @@ img {
 	margin: 0;
 }
 .main-nav {
-	margin-top: 5px;
+	margin: 5px 0 15px 0;
 }
 .name a,
 .main-nav a {
 	text-align: center;
 	display: block;
 	padding: 10px 15px;
+	
 }
 .main-nav a {
+	color:black;
 	font-size: .95em;
 	text-transform: uppercase;
+	font-weight: bold;
 }
 .main-nav a:hover {
 	color: grey;
@@ -67,6 +75,20 @@ img {
 .main-header {
 	padding-top: .5em;
 	padding-bottom: .5em;
+	color:black;
+	background-color: rgb(248, 247, 247);
+}
+
+.main-header  a {
+	color:black;
+
+
+}
+
+.logo{
+
+	float: right;
+	margin-bottom: 25px;
 }
 
 
@@ -74,12 +96,7 @@ img {
 	text-align: center;
 }
 
-.banner {
-	color: #000;
-	padding: 3.2em 0;
-	float:left;
-	
-}
+
 .col {
 	padding-right: 1em;
 	padding-left: 1em;
@@ -88,24 +105,35 @@ img {
 	
 	padding: 2em 0;
 	margin-top: 30px;
+	background-color: rgb(248, 247, 247);
+	margin: 0;
+}
+
+.main-footer a {
+	color:black;
+
+
 }
 
 #center{
 
 	text-align: center;
+	color:black;
 	}
 
 /* ---- Page Elements ---- */
 
-.logo {
-	float: right;
-	width: 250px;
-}
+
 .headline {
 	margin-bottom: 0;
 }
 .feat-img {
 	border-radius: 5px;
+}
+
+p .main-footer{
+
+	font-weight: bold;
 }
 
 /* ================================= 
@@ -119,15 +147,7 @@ img {
 		text-align: center;
 	}
 
-	.logo{
-
-		
-	}
-
-	.tagline{
-
-         
-	}
+	
 }
 
 
@@ -135,19 +155,21 @@ img {
 
 	.main-header,
 	.main-nav,
-	.row {
+	.row, .main-footer, .footer-inner {
 		display: flex;
 	}
 
 	#center{
 
 		text-align: center;
+		color:black;
 		}
 
-	.main-header {
+	.main-header, .main-footer, .footer-inner {
 		flex-direction: column;
 		align-items: center;
 	}
+
 
 	.col {
 		flex: 1 50%;
@@ -159,7 +181,7 @@ img {
 
 	.main-header,
 	.row,
-  .footer-inner{
+  .main-footer, .footer-inner{
 		width: 80%;
 		margin: 0 auto;
 		max-width: 1150px;
@@ -170,13 +192,20 @@ img {
 @media (min-width: 1025px) {
 
 	.main-header {
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: space-between;
+		margin-bottom: 20px;
+	}
+
+	.main-footer, .footer-inner {
+	justify-content: space-between;
+
 	}
 
 	#center{
 
 	text-align: center;
+	color:black;
 	}
 	
 	.col {
