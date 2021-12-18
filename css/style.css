@@ -72,24 +72,9 @@ img {
 
 /* ---- Layout Containers ---- */
 
-.main-header {
-	padding-top: .5em;
-	padding-bottom: .5em;
-	color:black;
-	background-color: rgb(248, 247, 247);
-}
-
-.main-header  a {
-	color:black;
 
 
-}
 
-.logo{
-
-	float: right;
-	margin-bottom: 25px;
-}
 
 
 .main-footer {
@@ -151,7 +136,7 @@ p .main-footer{
 }
 
 
-@media (min-width: 769px) {
+@media (min-width: 600px) {
 
 	.main-header,
 	.main-nav,
@@ -189,7 +174,7 @@ p .main-footer{
 
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 900px) {
 
 	.main-header {
 		flex-direction: column;

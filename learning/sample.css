@@ -1,0 +1,12 @@
+.fitem{
+    
+    display: contents;
+    
+        flex: 1 0 10%;
+    
+    }
+
+
+    .fitem{
+        display: none;
+    }
