@@ -163,10 +163,6 @@ header {
   padding: 0.8rem;
 }
 
-.logo {
-  margin: 0 auto;
-}
-
 .profile-image {
   margin: 0 auto;
 }
@@ -199,8 +195,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-
-
 
 .fitem {
   display: none;
@@ -244,8 +238,7 @@ body {
     display: flex;
   }
 
-  .tertiary{
-
+  .tertiary {
     flex: 1;
   }
 }
@@ -296,8 +289,6 @@ body {
   .hide {
     display: none;
   }
-
-  
 }
 
 @media (min-width: 900px) {
@@ -311,9 +302,8 @@ body {
     justify-content: space-between;
   }
 
-  .fmenu{
-
-    width:auto;
+  .fmenu {
+    width: auto;
   }
 
   #center {
@@ -336,13 +326,11 @@ body {
   .nav-menu {
     width: auto;
   }
-  .logo
-  {
+  .logo {
     margin: 0 0 0 0.3rem;
   }
 
-  #flogo{
-
+  #flogo {
     margin: 0 0 0 0.3rem;
   }
 }
