@@ -8,7 +8,9 @@
 }
 
 body {
-  font-family: "Varela Round", sans-serif;
+  font-family: 'Merriweather', serif;
+font-family: 'Source Sans Pro', sans-serif;
+ 
   line-height: 1.6;
   margin: 0 auto;
   padding: 0;
@@ -202,9 +204,18 @@ body {
 
 .contact {
   color: grey;
-
   padding-right: 1em;
   padding-left: 1em;
+}
+
+hr{
+
+  border: none;
+  height: 1px;
+  background: #dddddd;
+  margin: 0 0.9rem;
+
+
 }
 
 /* ================================= 
