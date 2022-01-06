@@ -8,9 +8,9 @@
 }
 
 body {
-  font-family: 'Merriweather', serif;
-font-family: 'Source Sans Pro', sans-serif;
- 
+  font-family: "Merriweather", serif;
+  font-family: "Source Sans Pro", sans-serif;
+
   line-height: 1.6;
   margin: 0 auto;
   padding: 0;
@@ -93,6 +93,7 @@ img {
 }
 .main-footer {
   margin-top: 30px;
+  background-color: white;
 }
 
 .main-footer a {
@@ -208,14 +209,15 @@ body {
   padding-left: 1em;
 }
 
-hr{
-
+hr {
   border: none;
   height: 1px;
   background: #dddddd;
-  margin: 0 0.9rem;
+  margin: 0 1.5rem;
+}
 
-
+.foot-heading {
+  color: black;
 }
 
 /* ================================= 
@@ -239,6 +241,7 @@ hr{
   .banner {
     padding-right: 1em;
     padding-left: 1em;
+    margin-top: 1em;
   }
 
   .footer-nav {
@@ -249,16 +252,23 @@ hr{
     display: flex;
   }
 
+  .logo {
+    margin: 0 0 0 0.3rem;
+  }
+
   .tertiary {
     flex: 1;
+  }
+
+  .flogo {
+    font-size: 115px;
   }
 }
 
 @media (min-width: 600px) {
   .header-nav,
   .row,
-  .main-footer,
-  .footer-inner {
+  .main-footer {
     display: flex;
   }
 
@@ -267,11 +277,8 @@ hr{
     color: black;
   }
 
-  .main-header,
-  .main-footer,
-  .footer-inner {
+  .main-footer {
     flex-direction: column;
-    align-items: center;
   }
 
   .col {
@@ -280,6 +287,7 @@ hr{
 
   .row {
     flex-wrap: wrap;
+    background-color: rgb(248, 247, 247);
   }
 
   .header-nav {
@@ -303,19 +311,31 @@ hr{
 }
 
 @media (min-width: 900px) {
-  .main-header {
+  /* .main-header {
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 20px;
+  } */
+
+  .banner {
+    display: flex;
+  }
+
+  .tagline {
+    margin: 1rem;
+  }
+
+  .logo-2 {
+    order: 2;
   }
 
   .main-footer {
     justify-content: space-between;
   }
 
-  .fmenu {
+  /* .fmenu {
     width: auto;
-  }
+  } */
 
   #center {
     text-align: center;
@@ -338,10 +358,6 @@ hr{
     width: auto;
   }
   .logo {
-    margin: 0 0 0 0.3rem;
-  }
-
-  #flogo {
     margin: 0 0 0 0.3rem;
   }
 }
